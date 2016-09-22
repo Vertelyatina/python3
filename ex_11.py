@@ -16,6 +16,6 @@ def drawcircle(angle, diam):
 			tt.forward(3*diam/120)
 			tt.left(3)
 
-for i in range(50, 250, 25):
+for i in range(70, 150, 10):
 	drawpair(i)
 	
