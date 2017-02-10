@@ -41,8 +41,6 @@ class Vigenere:
 
 if __name__ == '__main__':
 
-    
-
     keyword = input('keyword=')
     cipher = Vigenere(keyword)
 
@@ -51,9 +49,9 @@ if __name__ == '__main__':
     #     print(cipher.decode(line))
     #     line = input()
 
-    with open('Vigenere.txt', 'r') as input_file:
+    with open('ex_4.txt', 'r') as input_file:
         data = input_file.readlines()
 
-    with open('Vigenere_output.txt', 'a') as output_file:
+    with open('ex_4_output.txt', 'a') as output_file:
         for line in data:
             output_file.write(cipher.decode(line))
